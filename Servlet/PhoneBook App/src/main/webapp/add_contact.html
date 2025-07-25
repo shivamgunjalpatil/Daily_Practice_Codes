@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Contact</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background: #ffffffdd;
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 100, 0, 0.2);
+      width: 400px;
+      color: #1b5e20;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border-radius: 8px;
+      border: 1px solid #81c784;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 0.7rem;
+      background: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+  <form action="AddContactServlet" method="post">
+    <h2>Add New Contact</h2>
+    <label>Name:</label>
+    <input type="text" name="name" required />
+
+    <label>Email:</label>
+    <input type="email" name="email" required />
+
+    <label>Phone:</label>
+    <input type="text" name="phone" required />
+
+    <label>Address:</label>
+    <input type="text" name="address" required />
+
+    <button type="submit">Add Contact</button>
+  </form>
+</body>
+</html>

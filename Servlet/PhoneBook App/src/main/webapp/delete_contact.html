@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Delete Contact - PhoneBook App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f9f1;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 400px;
+      margin: 80px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    h2 {
+      text-align: center;
+      color: #2f855a;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #38a169;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2f855a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Delete Contact</h2>
+    <form action="DeleteContactServlet" method="post">
+      <label for="id">Enter Contact ID:</label>
+      <input type="number" name="id" id="id" required />
+
+      <button type="submit">Delete Contact</button>
+    </form>
+  </div>
+</body>
+</html>
